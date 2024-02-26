@@ -1,11 +1,13 @@
-class newProject {
+class Project {
 
     constructor (name){
         this.name = name;
+        this.taskList = [];
     }
 
-    addNewTask (taskName){
-
+    addNewTask (title, detail, date){
+        let newTask = new Task (title , detail , date);
+        this.taskList.push(newTask);
     }
 
     editTask (taskName) {
@@ -19,5 +21,8 @@ class newProject {
 
     markTaskCompleted (taskName) {
 
+
     }
+
+    m
 }
