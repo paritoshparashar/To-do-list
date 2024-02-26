@@ -1,1 +1,11 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
 
+
+
+h1 sub {
+    font-size: small;
+}
