@@ -3,7 +3,7 @@ export default function checkPropertyExists (obj , prop) {
         return true;
     }
     else {
-        console.log(`'${taskName}' task not found.`);
+        console.log(`Property not found: '${taskName}'`);
         return false;
         }
 }

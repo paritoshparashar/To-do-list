@@ -16,9 +16,11 @@ class Project {
 
     editTask (title, detail, date) {
 
-        this.taskList[title].title = title;
-        this.taskList[title].detail = detail;
-        this.taskList[title].date = date;
+        let taskObj = this.taskList[title];
+
+        taskObj.title = title;
+        taskObj.detail = detail;
+        taskObj.date = date;
     }
 
     removeTask (taskName){
@@ -48,3 +50,5 @@ class Project {
 
     
 }
+
+export default Project;
