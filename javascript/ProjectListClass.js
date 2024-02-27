@@ -16,14 +16,18 @@ class ProjectList {
     removeProject (projName) {
         
         if (checkPropertyExists(this.projectList , projName)) {
-            this.projectList[projName];
+            delete this.projectList[projName];
         }
         
     }
 
-    renameProj (projName, newName) {
-        if (checkPropertyExists(this.projectList , projName)) {
-            this.projectList[projName].projName = newName;
+    renameProject (oldName, newName) {
+        if (checkPropertyExists(this.projectList , oldName)) {
+
+            this.projectList[newName] = this.projectList[oldName];
+            this.projectList[newName].name = newName;
+
+            this.removeProject(oldName);
         }
     }
 }
