@@ -12,8 +12,11 @@ class Project {
         this.taskList[title] = new Task (title , detail , date);
     }
 
-    editTask (taskName) {
-
+    editTask (title, detail, date) {
+        
+        this.taskList[title].title = title;
+        this.taskList[title].detail = detail;
+        this.taskList[title].date = date;
     }
 
     removeTask (taskName){
@@ -37,6 +40,16 @@ class Project {
         else {
         console.log(`'${taskName}' task not found.`);
         }
+    }
+
+    markImportant (taskName){
+        if (this.taskList.hasOwnProperty(taskName)) {  
+            this.taskList[taskName].important = !this.taskList[taskName].important;
+            }
+    
+            else {
+            console.log(`'${taskName}' task not found.`);
+            }
     }
 
     

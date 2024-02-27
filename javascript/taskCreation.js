@@ -5,6 +5,7 @@ class Task {
         this.detail = detail;
         this.date = date;
         this.completed = false;
+        this.important = false;
     }
 }
 
