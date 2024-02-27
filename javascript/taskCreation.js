@@ -4,5 +4,8 @@ class Task {
         this.title = title;
         this.detail = detail;
         this.date = date;
+        this.completed = false;
     }
 }
+
+export default Task;
