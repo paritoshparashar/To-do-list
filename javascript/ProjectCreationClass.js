@@ -1,5 +1,5 @@
-import checkPropertyExists from './propertyExists.js';
-import Task from './taskCreation.js';
+import checkPropertyExists from './propertyExistsMethod.js';
+import Task from './TaskCreationClass.js';
 
 
 class Project {

@@ -1,7 +1,5 @@
-import Project from "./projectCreation";
-import checkPropertyExists from "./propertyExists";
-
-let projects = new ProjectList ();
+import Project from "./ProjectCreationClass";
+import checkPropertyExists from "./propertyExistsMethod";
 
 class ProjectList {
 
@@ -11,7 +9,7 @@ class ProjectList {
 
     addProject (projName) {
 
-        projectList[projName] = new Project (projName);
+        this.projectList[projName] = new Project (projName);
     
     }
 
@@ -29,4 +27,5 @@ class ProjectList {
         }
     }
 }
+
 
