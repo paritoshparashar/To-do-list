@@ -1,2 +1,2 @@
 # To-do-list
-This project is not complete yet
+This project is not yet complete.
