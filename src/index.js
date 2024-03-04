@@ -1,4 +1,7 @@
 import ProjectList from "./app/ProjectListClass";
 
 
-const dummyProject = new ProjectList ();
+let dummyProjectList = new ProjectList ();
+dummyProjectList.addProject('proj1');
+dummyProjectList.addProject('proj2');
+console.log(dummyProjectList);
