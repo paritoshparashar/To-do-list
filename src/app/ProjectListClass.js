@@ -1,5 +1,5 @@
 import Project from "./ProjectCreationClass";
-import checkPropertyExists from "./propertyExistsMethod";
+import checkPropertyExists from "./utils/propertyExistsMethod";
 
 class ProjectList {
   constructor() {

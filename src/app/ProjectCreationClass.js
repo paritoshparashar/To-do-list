@@ -1,4 +1,4 @@
-import checkPropertyExists from "./propertyExistsMethod.js";
+import checkPropertyExists from "./utils/propertyExistsMethod.js";
 import Task from "./TaskCreationClass.js";
 
 class Project {
