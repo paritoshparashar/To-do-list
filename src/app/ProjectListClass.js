@@ -25,3 +25,5 @@ class ProjectList {
     }
   }
 }
+
+export default ProjectList;
